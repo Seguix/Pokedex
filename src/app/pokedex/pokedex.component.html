@@ -7,13 +7,13 @@
         <div class="light is-green"></div>
       </div>
       <div class="pokedex-screen-container">
-        <app-pokedex-screen [loading]='loading' [error]='error' [pokemon]='pokemon'></app-pokedex-screen>
+        <app-pokedex-screen [loading]='loading' [error]='error' [pokemon]='pokemon' [booleanShiny]='booleanShiny'></app-pokedex-screen>
       </div>
       <div class="pokedex-left-bottom">
         <div class="pokedex-left-bottom-lights">
           <div class="light is-blue is-medium"></div>
-          <div class="light is-green is-large"></div>
-          <div class="light is-orange is-large"></div>
+          <button class="light is-green is-large" (click)="changeShiny(false)">No shiny</button>
+          <button class="light is-orange is-large" (click)="changeShiny(true)" [disabled]="verifyShiny">Shiny</button>
         </div>
         <app-pokedex-form (stringPokemon)='handleSubmit($event)'></app-pokedex-form>
       </div>

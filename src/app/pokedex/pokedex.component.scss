@@ -147,6 +147,15 @@
 .light.is-large {
   width: 80px;
   border-radius: 20px;
+  color: #ffffff;
+}
+
+.light.is-large:active {
+  opacity: .9;
+}
+
+.light.is-large:focus {
+  outline: none;
 }
 
 .light.is-red {
@@ -214,4 +223,21 @@
   margin: 20px 0;
   height: 50%;
   padding: .8rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .pokedex-right-back,
+  .pokedex-right-front {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .pokedex {
+    width: 21rem;
+  }
+
+  .pokedex-screen-container {
+    padding: .6rem;
+  }
 }

@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PokedexScreenComponent implements OnInit {
   @Input() public loading: boolean;
   @Input() public error: boolean;
+  @Input() public booleanShiny: boolean;
   @Input() public pokemon: any = null;
 
   constructor() { }

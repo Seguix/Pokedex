@@ -46,3 +46,10 @@
 .pokemon-stat {
   font-size: 0.9rem;
 }
+
+@media screen and (max-width: 370px) {
+  .pokemon-info {
+    grid-template-columns: 36% calc(65% - 0.8em);
+    grid-column-gap: 0.7rem;
+  }
+}
